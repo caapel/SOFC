@@ -1,3 +1,6 @@
 .ipynb_checkpoints
 *.xlsx
 */.ipynb_checkpoints/*
+
+article/
+pictures/
