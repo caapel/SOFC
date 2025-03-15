@@ -3,21 +3,19 @@
 This repository contains the source materials and calculation results used in the study ***SOFC Voltage Prediction by Data-Driven Approach***
 
 In this version:
-1) added searcher number of components for PCA
-2) added 5 variant XGboost Regressor:
-+ full feature set whis default XGBoost option (default)
-+ XGBoost+PCA
-+ XGBoost+SHAP
-+ XGBoost+PI
-+ XGBoost+MDI
+1) added time measurement for scripts
+2) added dataframe `df_search_result` with results of model training (section 4: Result)
 
 ### fit result
-| model | default |  PCA | SHAP | PI | MDI |
+
+| model | R2_score | MSE | MAE | MAPE | second |
 | --- | --- | --- | --- | --- | --- |
-| R2_score | 0.997 | 0.9948 | 0.9966 | 0.9966 | 0.9956 |
-| MSE | 0.994 | 1.722 | 1.118 | 1.123 | 1.429 |
-| MAE | 0.3086 | 0.4112 | 0.3834 | 0.3841 | 0.4099 |
-| MAPE | **2.63%** | 3.94% | 3.40% | 3.40% | 3.54% |
+| XGB default | 0.99698 | 0.9940 | 0.309 | **2.63%** | 0.179379 |
+| XGB+PCA | 0.99476 | 1.7219 | 0.411 | 3.94% | 0.126611 |
+| XGB+SHAP | 0.99660 | 1.1180 | 0.383 | 3.40% | 0.116858 |
+| XGB+PI | 0.99658 | 1.1234 | 0.384 | 3.40% | 0.117702 |
+| XGB+MDI | 0.99564	 | 1.4293 | 0.410 | 3.54% | 0.113655 |
+
 
 **Conclusion**:
 - MSE metric is not applicable in the context of this study
