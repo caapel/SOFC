@@ -3,9 +3,8 @@
 This repository contains the source materials and calculation results used in the study ***SOFC Voltage Prediction by Data-Driven Approach***
 
 In this version:
-1) add 2 variant MultiLayer Preceptron Regressor:
-+ MLP default
-+ MLP+PCA
+1) added graph.ipynb with render figure "The SOFC system output electrical characteristics"
+2) in SOFC_analisys.ipynb added render figure "Example of Decision Tree of the XGB-model"
 
 ### fit result
 
@@ -26,7 +25,6 @@ In this version:
 				
 
 **Conclusion**:
-- MSE metric is not applicable in the context of this study
-- full feature set whis default **XGBRandom_Forest** option demonstrated best result
+- full feature set whis default **XGBRandom_Forest** option demonstrated best result for MAPE-metric
 - reducing the dimensionality of components gives a negative result and therefore the tools (SHAP, PI, MDI) *do not make sense*
 - MLP showed the worst result. MLP+PСA somewhat speed up the algorithm and increase accuracy, but do not improve the result globally
