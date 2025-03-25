@@ -3,7 +3,7 @@
 This repository contains the source materials and calculation results used in the study ***SOFC Voltage Prediction by Data-Driven Approach***
 
 In this version:
-1) added MSE-metric on plot
+1) debug MSE-metric on plot
 
 ### fit result
 
@@ -24,7 +24,7 @@ In this version:
 				
 
 **Conclusion**:
-- full feature set whis default **XGBRandom_Forest** option demonstrated best result for *MAPE* metric
-- full feature set whis default **XGBoost** option demonstrated best result for *time*, *R2* and *MSE* metric
-- reducing the dimensionality of components gives a negative result and therefore the tools (SHAP, PI, MDI) *do not make sense*
-- MLP showed the worst result. MLP+PСA somewhat speed up the algorithm and increase accuracy, but do not improve the result globally
+- full feature set with default **XGBRandom_Forest** model demonstrated the best results for *MAE*, *MAPE* metrics
+- full feature set with default **XGBoost** model demonstrated the best results for *time*, *R2* and *MSE* metrics
+- Reducing the dimensionality of input feature vectors leads to an increase in error and therefore the SHAP, PI, MDI tools are useless
+- MLP showed the worst result. MLP+PCA slightly boost the performance and increase the accuracy, but do not improve the result globally
