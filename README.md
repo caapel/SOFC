@@ -3,7 +3,7 @@
 This repository contains the source materials and calculation results used in the study ***SOFC Voltage Prediction by Data-Driven Approach***
 
 In this version:
-1) debug MSE-metric on plot
+1) The comments received in the first round of review have been addressed.
 
 ### fit result
 
