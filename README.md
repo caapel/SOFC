@@ -1,9 +1,9 @@
 # Analysis and Prediction of the SOFC Parameters by Data-Driven Modeling
 
-This repository contains the source materials and calculation results used in the study ***SOFC Voltage Prediction by Data-Driven Approach***
+This repository contains the source materials and calculation results used in the study [***SOFC Voltage Prediction by Data-Driven Approach***](https://doi.org/10.3390/en18092174)
 
 In this version:
-1) The comments received in the first round of review have been addressed.
+1) Added a ref on the study in the README.md file.
 
 ### fit result
 
