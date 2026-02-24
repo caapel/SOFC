@@ -9,6 +9,7 @@ In this version:
 4) added SHAP force & dependency plot for XGBRandom_Forest
 5) scale selection between MLP & DTs (GB & RF)
 6) added example DT-graph for XGBRF
+7) added example MLP-graph
 
 ### fit result
 
