@@ -8,6 +8,7 @@ In this version:
 3) standardization has been replaced by normalization (MinMaxScaler)
 4) added SHAP force & dependency plot for XGBRandom_Forest
 5) scale selection between MLP & DTs (GB & RF)
+6) added example DT-graph for XGBRF
 
 ### fit result
 
