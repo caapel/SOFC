@@ -7,27 +7,28 @@ In this version:
 2) switching to a new engine (CatBoost)
 3) standardization has been replaced by normalization (MinMaxScaler)
 4) added SHAP force & dependency plot for XGBRandom_Forest
+5) scale selection between MLP & DTs (GB & RF)
 
 ### fit result
 
 | model (components) | R2_score | MSE | MAE | MAPE | second |
 | --- | --- | --- | --- | --- | --- |
 | *Gradient Boosting* |
-| **CatBoost_default(full)** | **0.99724** | **0.9087** | 0.2384 | 2.78% | 2.564952 |
-| CatBoost+PCA(11) | 0.99554 | 1.4657 | 0.3435 | 4.75% | 2.301819 |
-| CatBoost+SHAP(10) | 0.99514 | 1.5969 | 0.3509 | 2.50% | 2.047301 |
-| CatBoost+PI(8) | 0.99732 | 0.8826 | 0.2588 | 2.12% | 2.011584 |
-| CatBoost+MDI(13) | 0.9969 | 1.016 | 0.2455 | 2.60% | 2.298787 |
+| CatBoost_default(full) | 0.99725 | 0.9069 | 0.238 | 2.78% | 2.571273 |
+| CatBoost+PCA(11) | 0.99555 | 1.4629 | 0.346 | 4.93% | 2.184407 |
+| CatBoost+SHAP(8) | 0.99489 | 1.6808 | 0.379 | 2.89% | 1.937381 |
+| **CatBoost+PI(10)** | **0.99732** | **0.8843** | 0.259 | 2.12% | 1.929342 |
+| CatBoost+MDI(14) | 0.99692 | 1.0168 | 0.246 | 2.60% | 2.189198 |
 | *Random Forest* |
-| **XGBRF_default(full)** | 0.99701 | 0.9835 | 0.2606 | **1.10%** | 3.821726 |
-| XGBRF+PCA(29) | 0.99607 | 1.2899 | 0.284 | 1.34% | 3.170665 |
-| XGBRF+SHAP(15) | 0.99696 | 1.0014 | 0.249 | 1.12% | 1.720645 |
-| XGBRF+PI(15) | 0.99668 | 1.0934 | **0.242** | 1.18% | 1.798448 |
-| XGBRF+MDI(12) | 0.99501 | 1.6398 | 0.328 | 1.28% | **1.547774** |
+| **XGBRF_default(full)** | 0.99701 | 0.9835 | 0.261 | **1.10%** | 3.643324 |
+| XGBRF+PCA(29) | 0.99607 | 1.2899 | 0.284 | 1.34% | 2.862980 |
+| XGBRF+SHAP(15) | 0.99696 | 1.0014 | 0.249 | 1.12% | 1.651798 |
+| XGBRF+PI(15) | 0.99668 | 1.0934 | **0.242** | 1.18% | 1.725580 |
+| XGBRF+MDI(12) | 0.99501 | 1.6398 | 0.328 | 1.28% | **1.493196** |
 | *MultiLayer Preceptron*|
-| MLP_default(full) | 0.99154 | 2.7549 | 0.884 | 7.88% | 1.783327 |
-| MLP+PCA(21) | 0.99567 | 1.4255 | 0.392 | 3.32% | 3.726366 |
-| MLP+PI(13) | 0.98884 | 3.6077 | 0.978 | 8.80% | 1.588605 |
+| MLP_default(full) | 0.99154 | 2.7549 | 0.884 | 7.88% | 1.854000 |
+| MLP+PCA(21) | 0.99567 | 1.4255 | 0.392 | 3.32% | 3.657471 |
+| MLP+PI(13) | 0.98884 | 3.6077 | 0.978 | 8.80% | 1.639187 |
 				
 
 **Conclusion**:
