@@ -1,6 +1,6 @@
 # Analysis and Prediction of the SOFC Parameters by Data-Driven Modeling
 
-This repository contains the source materials and calculation results used in the study ***SOFC Voltage Prediction by Data-Driven Approach***
+This repository contains the source materials and calculation results used in the study ***Predictive modeling of the dependence of solid oxide fuel cell cogeneration system voltage on operating parameters***
 
 In this version:
 1) drop combine similar feature in `SOFC_analisys.ipynb` (transition from 25 to 29 features)
