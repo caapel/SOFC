@@ -10,6 +10,7 @@ In this version:
 5) scale selection between MLP & DTs (GB & RF)
 6) added example DT-graph for XGBRF
 7) added example MLP-graph
+8) translation of figures into Russian
 
 ### fit result
 
