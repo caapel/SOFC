@@ -11,6 +11,7 @@ In this version:
 6) added example DT-graph for XGBRF
 7) added example MLP-graph
 8) translation of figures into Russian
+9) added gradient search (dT/dt & dV/dT) in `SOFC_temp_grad_analisys.ipynb`
 
 ### fit result
 
